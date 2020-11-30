@@ -750,11 +750,10 @@ textarea .form__control {
 }
 
 .form-banner {
-  background-image: url(../img/backgroundthree.png
-  );
+  background-image: url(../img/backgroundthree.png);
   max-width: 980 px;
   text-align: center;
-margin: auto;
+  margin: auto;
   }
 
 .hreftwo  {
