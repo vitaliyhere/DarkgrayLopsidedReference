@@ -1,0 +1,884 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;1,100&family=Nanum+Myeongjo:wght@400;700;800&display=swap');
+ 
+:root {
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+    max-width: 980px;
+    margin: auto;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-around;
+}
+
+ .container-header {
+  width: 100%;
+  margin: auto;
+  background-color:pink;
+}
+
+@media (min-width: 500px) {
+.container-header {
+  display: flex;
+ }
+}
+
+.logo {
+  display: flex;
+  font-weight: bold;
+  cursor: pointer;
+  color: white;
+  font-size: 32px;
+  font-family: 'Nanum Myeongjo', serif;
+  font-style: italic; 
+  justify-content: center;
+  align-items: center;
+  margin-left: 60px;
+}
+
+.header-body {
+  max-width: 100%;
+  justify-content: space-around;
+  margin: auto;
+  align-items: center;
+}
+
+/*@media (min-width: 769px) {
+    header .container-header {
+        display: flex;
+        justify-content: space-around;
+    }
+header .logo {
+        display: flex;   
+    }
+    header nav .header-menu {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    header nav .menu-items {
+        display: flex;
+        
+    }
+}*/
+
+.social-media-button {
+display: flex;
+color: white;
+background-color: black;
+cursor: pointer;
+}
+
+.social-media-button:hover {
+  background-color: red;
+}
+
+.banner {
+    background-image: url(../img/ringg.png);
+    min-height: 600px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 100%;
+    text-align: left;
+}
+
+.banner banner-text {
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.banner .info-btn {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f52e62;
+  color: white;
+  letter-spacing: .02em;
+  text-transform: uppercase;
+  text-align: center;
+  cursor: pointer;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 1px;
+  padding: 19px 21px;
+  width:transparent;
+  font-size: 12px;
+  margin-top: 50px;
+}
+
+.decor-banner-image {
+  display: inline-block;
+  width: 300px;
+  margin: auto;
+  left: 0;
+}
+
+h1 {
+  display: block;
+  font-size: 99px;
+  font-family: 'Nanum Myeongjo', serif;
+}
+
+h2, h3 {
+  font-size: 30px;
+  font-family: 'Nanum Myeongjo', serif;
+}
+
+.banner p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+}
+
+.menu-items a {
+  text-decoration: none;
+  font-size: 16px;
+  color: white;
+}
+
+.menu-items a:hover {
+  color: red;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.collection-list .card {
+  max-width: 300px;
+  }
+
+.container {
+  max-width: 980px;
+  margin: auto;
+}
+
+.new-collections {
+  background-color: #f5f5f5;
+   font-family: 'Nanum Myeongjo', serif;
+}
+
+.new-collections h2, .diamond-container h2 {
+  padding-top: 100px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.decor-image {
+  display: block;
+  width: 500px;
+  margin: auto;
+}
+ 
+.collection-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.collection-list .card {
+  max-width: 320px;
+}
+
+.collection-list .card img {
+ display: block;
+ width: 90%;
+ margin: auto;
+}
+
+.collection-list .card h3 {
+text-align: center;
+font-size: 22px;
+margin: 25px 0;
+  }
+
+.uniqueness-container {
+  max-width: 980px;
+  margin: auto;
+}
+
+.our-uniqueness {
+  background-color: black;
+}
+
+.our-uniqueness  h2 {
+  padding-top: 110px;
+  font-size: 30px;
+  text-align: center;
+  color: #f5f5f5;
+}
+
+.decor-image {
+  display: block;
+  width: 500px;
+  margin: auto;
+}
+
+.unique-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.unique-list .uniqueness-card {
+  max-width: 320px;
+}
+
+.unique-list .uniqueness-card img {
+  display: block;
+  width: 90%;
+  margin: auto;
+}
+
+.unique-list .uniqueness-card h3 {
+  text-align: center;
+  font-size: 22px;
+  margin: 25px 0;
+  color: #f5f5f5;
+}
+
+.diamond-container {
+  max-width: 980px;
+  margin: auto;
+}
+
+.our-diamond {
+  background-color: white;
+}
+
+.our-diamond  h2 {
+  padding-top: 110px;
+  font-size: 30px;
+  text-align: center;
+  color: black;
+}
+
+.decor-image {
+  display: block;
+  width: 500px;
+  margin: auto;
+}
+
+.diamond-list {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.diamond-list .diamond-card img {
+  display: block;
+  width: 100%;
+  margin: auto;
+}
+
+.diamond-list .diamond-card h3 {
+  text-align: center;
+  font-size: 22px;
+  margin: 25px 0;
+  color: #f5f5f5;
+}
+
+.diamond-one {
+  grid-area: 1/1/3/3;
+}
+
+.about-info {
+  background-color: #f5f5f5;
+  max-width: 980px;
+}
+
+.about-info  h2 {
+  font-size: 30px;
+  text-align: center;
+}
+
+.card-us {
+   align-items: center;
+   align-self: center;
+}
+
+.leading-company
+{
+   align-items: center;
+   align-self: center;
+   margin-right: 10px;
+   font-size: 11px;
+   font-weight: bold;
+   font-family: Montserrat, sans-serif;
+}
+
+.decor-image {
+  display: block;
+  width: 100%;
+  margin: auto;
+}
+
+/*.info-ring {
+  display: grid;
+ grid-template-columns: 1fr 1fr;
+} */   
+
+@media (min-width: 500px) {
+.info-ring {
+  display: grid;
+ grid-template-columns: 1fr 1fr;
+}
+   .card-info {
+    grid-area: 1 / 2;
+   }
+}
+
+
+
+.info-ring .card-us img {
+  display: block;
+  width: 90%;
+  margin: auto;
+}
+
+
+.about-form {
+  background-color: #f5f5f5;
+  max-width: 980px;
+}
+
+.about-form  h2 {
+  font-size: 30px;
+  text-align: center;
+}
+
+.card-info {
+   align-items: center;
+   align-self: center;
+}
+
+.our-slogan
+{
+   align-items: center;
+   align-self: center;
+   padding: 50px;
+   font-size: 13px;
+   font-family: Montserrat, sans-serif;
+   background-color: white;
+}
+
+/*.info-text {
+  display: grid;
+ grid-template-columns: 1fr 1fr;
+}*/
+
+@media (min-width: 500px) {
+.info-text {
+  display: grid;
+ grid-template-columns: 1fr 1fr;
+}
+
+}
+
+.info-text .card-info img {
+  display: block;
+  width: 90%;
+  margin: auto;
+}
+
+.product-buttons .btn-info {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f52e62;
+  color: white;
+  letter-spacing: .02em;
+  text-transform: uppercase;
+  text-align: center;
+  cursor: pointer;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 1px;
+  padding: 19px 21px;
+  width:transparent;
+  font-size: 12px;
+  margin-top: 50px;
+}
+
+.special-services {
+  background-color: #f5f5f5;
+}
+
+.special-services  h2 {
+  padding-top: 110px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.decor-image {
+  display: block;
+  width: 500px;
+  margin: auto;
+}
+
+.service-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.service-list .offer {
+  max-width: 480px;
+}
+
+.service-list .offer img {
+  display: block;
+  width: 100%;
+  margin: auto;
+}
+
+.service-list .offer h3 {
+  text-align: center;
+  font-size: 22px;
+  margin: 25px 0;
+}
+
+.special-servicestwo {
+  background-color: #f5f5f5;
+}
+
+.special-servicestwo  h2 {
+  padding-top: 110px;
+  font-size: 30px;
+  text-align: center;
+}
+
+
+.service-listtwo {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.service-listtwo .offertwo {
+  max-width: 480px;
+}
+
+.service-listtwo .offertwo img {
+  display: block;
+  width: 100%;
+  margin: auto;
+}
+
+.service-listtwo .offertwo h3 {
+  text-align: center;
+  font-size: 22px;
+  margin: 25px 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 980px;
+  margin: auto;
+}
+
+.about-magazines {
+  background-color: #f5f5f5;
+  max-width: 980px;
+  margin-top: 20px;
+}
+
+.about-magazines  h2 {
+  font-size: 30px;
+  text-align: center;
+}
+
+.about-magazines  h3 {
+  font-size: 21px;
+  text-align: center;
+}
+
+.card-mag {
+   align-items: center;
+   align-self: center;
+}
+
+.leading-magazine
+{
+   align-items: center;
+   align-self: center;
+   margin-right: 20px;
+   margin-left: 20px;
+   font-size: 16px;
+   font-weight: bold;
+   font-family: Montserrat, sans-serif;
+}
+
+.decor-image {
+  display: block;
+  width: 100%;
+  margin: auto;
+}
+
+
+@media (min-width: 500px) {
+.info-magazines {
+  display: grid;
+ grid-template-columns: 1fr 1fr;
+} 
+}
+
+
+
+.info-magazines .card-mag img {
+  display: block;
+  width: 100%;
+  margin: auto;
+  }
+
+
+.decor-image {
+  display: block;
+  width: 100%;
+  margin: auto;
+}
+
+.howto-choose {
+  background-color: #f5f5f5;
+  max-width: 980px;
+}
+
+.howto-choose  h2 {
+  font-size: 30px;
+  text-align: center;
+}
+
+.card-item {
+   align-items: center;
+   align-self: center;
+}
+
+.leading-items
+{
+   align-items: center;
+   align-self: center;
+   margin-right: 20px;
+   margin-left: 20px;
+   font-size: 16px;
+   font-weight: bold;
+   font-family: 'Montserrat', sans-serif;
+}
+
+.howwe-choose .leading-items  h3 {
+  font-size: 22px;
+  text-align: center;
+  font-family: Nanum Myeongjo", serif;
+}
+
+#second {
+margin-bottom: 70px;
+}
+
+.color-ring {
+  font-family: Nanum Myeongjo", serif;
+}
+
+
+@media (min-width: 500px) {
+.howwe-choose {
+  display: grid;
+ grid-template-columns: 1fr 1fr;
+  }
+}
+
+
+.howwe-choose .card-item img {
+  display: block;
+  width: 100%;
+  margin: auto;
+}
+
+.banner-two {
+    margin-top: 40px;
+    background-image: url(../img/backgroundtwo.jpg);
+    min-height: 300px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 980px;
+    text-align: left;
+}
+
+.banner-two .bannertwo-text {
+    align-items: flex-start;
+    flex-direction: column;
+    color: white;
+    margin-left: 85px;
+}
+
+.bannerthree-text{  
+    color: white;
+    font-size: 18px;
+    margin-left: 85px;
+}
+
+ .submit-button {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f52e62;
+  color: white;
+  letter-spacing: .02em;
+  text-transform: uppercase;
+  text-align: center;
+  cursor: pointer;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 1px;
+  padding: 12px 14px;
+  font-size: 12px;
+  width: 80%;
+  margin-left: 85px;
+  margin-top: 10px;
+}
+
+.email{
+  width: 77%;
+  margin-left: 85px;
+  padding: 12px 14px;
+}
+
+
+
+.contacts__info {
+  display: flex;
+  padding: 100px 0;
+}
+
+.form__container {
+  padding: 50px;
+  background-color: white;
+  width: 400px;
+  margin: auto;
+  font-family: inherit;
+}
+
+.center__column {
+display: flex;
+flex-direction: column;
+font-family: Montserrat, sans-serif;
+margin: auto;
+max-width: 980px;
+max-height: 500px;
+}
+
+.button-primary:hover {
+  background-color: black;
+}
+
+input::placeholder,
+textarea::placeholder {
+  padding: 5px;
+  color: black;
+}
+label {
+  display: block;
+  color: #fff;
+}
+textarea.form__control {
+  height: auto;
+}
+
+.our-offer {
+  text-align: center;
+}
+
+.our-invitation {
+  text-align: center;
+}
+
+.decor-banner-imagetwo {
+  display: block;
+  width: 200px;
+  margin: auto;
+}
+
+.form__control {
+  color: #fff;
+  font-size: 16px;
+  padding: 5px;
+  background-color: white;
+  width: 400px;
+  height: 44px;
+  margin: 5px 0;
+}
+@media (max-width: 767px) {
+  .form__control {
+    width: 320px;
+  }
+}
+input:focus {
+  outline: none;
+}
+textarea .form__control {
+  height: auto;
+}
+
+#contacts {
+  margin-right: 30px;
+}
+
+@media (max-width: 769px) {
+  .form__container {
+    padding: 0px;
+  }
+  .contacts__info {
+    flex-direction: column;
+    padding: 0;
+  }
+  textarea.form__control {
+    width: 300px;
+  }
+  .form__control {
+    width: 300px;
+  }
+  #contacts {
+    margin: 0;
+    padding: 0 15px;
+  }
+}
+
+.form-banner {
+  background-image: url(..//img/backgroundthree.png
+  );
+  max-width: 980 px;
+  text-align: center;
+margin: auto;
+  }
+
+.hreftwo  {
+  width: 300px;
+  color: black;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: 'Nanum Myeongjo', serif;
+  font-style: italic;
+  margin: 10px;
+}
+
+.hreftwo:hover {
+  color: red;
+}
+
+.logotwo {
+  display: flex;
+  font-weight: bold;
+  cursor: pointer;
+  color: black;
+  font-size: 32px;
+  font-family: 'Nanum Myeongjo', serif;
+  font-style: italic; 
+  justify-content: center;
+  align-items: center;
+  margin-left: 60px;
+}
+
+footer.footer.container-footer {
+    display: grid;
+    grid-template-columns: 2fr 5fr 1fr;
+}
+
+.clock {
+ justify-content: center;
+ color: black;
+ font-weight: bold;
+}
+
+@media (min-width: 800px) {
+.footer .menu_footer {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  flex-wrap: wrap;
+}
+}
+
+.carousel {
+    display: flex;
+    justify-content: space-around;     
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+
+.carousel ul{
+    margin-left: 70px;
+    padding-left: 0px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.carousel .card-img {
+  max-width: 250px;
+  max-height: 100px;
+}
+
+.btn-forward {
+  cursor: pointer;
+  background-color: white;
+  border: none;
+}
+
+.btn-back {
+  cursor: pointer;
+  background-color: white;
+  border: none; 
+  outline: none;
+}
+
+.btn-forward:active {
+  border: none;
+  text-decoration: none;
+ outline: none;
+}
+
+.btn-back:active {
+  border: none;
+  text-decoration: none;
+ outline: none;
+ 
+}
+
+@media screen and (min-width:700px) and (max-width:900px) {
+    .carousel .third-card {
+        display: none;
+    }
+}
+
+@media (max-width:700px) {
+     .carousel .third-card {
+        display: none;
+    }
+    .carousel .second-card {
+        display: none;
+    }
+}
+
+
+.clock {
+  margin-top: 100px;
+  margin: auto;
+}
+
+.button-primary {
+  background-color: pink;
+  text-align: center;
+  cursor: pointer;
+  color: white;
+  width: 100%;
+  margin: auto;
+  padding: 16px 18px;
+  font-family: 'Montserrat', sans-serif;
+}
